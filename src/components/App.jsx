@@ -1,6 +1,6 @@
 import {Profile} from '../components/Profile/Profile'
 import {Statistics} from '../components/Statistic/Statistics'
-import {FriendList} from '../components/FriendList/FriendsList'
+import { FriendsList } from './FriendList/FriendsList'
 import {TransactionHistory} from '../components/Transaction/TransactionHistory'
 import user from '../../src/user.json'
 import data from '../components/Statistic/data.json'
@@ -23,7 +23,7 @@ export const App = () => {
     label = {data.label}
     percentage = {data.percentage}/>
 
-  <FriendList friends={friends}
+  <FriendsList friends={friends}
   key={friends.id}
   avatar={friends.avatar} 
   name ={friends.name}
